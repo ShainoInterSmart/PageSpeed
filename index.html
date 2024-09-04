@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="This is a sample HTML page with a heading and a paragraph.">
-
-    <!-- Open Graph Meta Tags (for social media sharing) -->
-    <meta property="og:title" content="Page Title">
-    <meta property="og:description" content="This is a sample HTML page with a heading and a paragraph.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com/your-page">
-    <meta property="og:image" content="https://yourwebsite.com/image.jpg">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Page Title">
-    <meta name="twitter:description" content="This is a sample HTML page with a heading and a paragraph.">
-    <meta name="twitter:image" content="https://yourwebsite.com/image.jpg">
-
-    <title>Page Title</title>
+    <title>Single Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 60px 20px;
+            margin-top: 50px;
+            height: 600px; /* Adjust based on content */
+        }
+        #section1 { background-color: #f4f4f4; }
+        #section2 { background-color: #ccc; }
+        #section3 { background-color: #aaa; }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </nav>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>Content for section 1...</p>
+    </section>
 
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>Content for section 2...</p>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>Content for section 3...</p>
+    </section>
 </body>
 </html>
